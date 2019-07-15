@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script src="./lib-flexible/flexible_css.debug.js"></script>
+    <script src="./lib-flexible/flexible.debug.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.7.2/lib/theme-chalk/index.css">
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but web-page doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+    <!-- 先引入 Vue,vue.min.js会导致开发时候vue-devtools不可用,开发中换成vue.js -->
+    <!-- <script src="https://unpkg.com/vue@2.6.8/dist/vue.min.js"></script> -->
+    <script src="https://unpkg.com/vue@2.6.8/dist/vue.js"></script>
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/vue-router@3.0.6/dist/vue-router.min.js"></script>
+    <script src="https://unpkg.com/axios@0.18.0/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vuex@3.1.0/dist/vuex.min.js"></script>
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui@2.7.2/lib/index.js"></script>
+  </body>
+</html>
