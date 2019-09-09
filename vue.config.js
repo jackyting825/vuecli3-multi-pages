@@ -25,7 +25,15 @@ module.exports = {
     open: true, //配置自动启动浏览器
     proxy: {
       '/guest': {
-        target: 'http://localhost:8081',
+        target: 'http://192.168.100.2:8081',
+        changeOrigin: true
+      },
+      '/home': {
+        target: 'http://192.168.100.2:8081',
+        changeOrigin: true
+      },
+      '/upload': {
+        target: 'http://192.168.100.2',
         changeOrigin: true
       }
     }

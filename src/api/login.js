@@ -3,8 +3,8 @@ import qs from 'qs'
 
 export function loginByUsername(username, password) {
   const data = {
-    username,
-    password
+    username: username,
+    password: btoa(password)
   }
   return request({
     url: '/guest/webSignIn',
